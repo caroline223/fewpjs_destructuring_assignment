@@ -1,6 +1,21 @@
 const farmAnimals = 'cow horse sheep pig chicken';
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
+const [bessie, , dolly, babe, little] = farmAnimals.split(' ');
+const [blackAndWhite, , black, pink] = farmAnimals.split(' '); 
+console.log(moo, neigh, baa, oink, cluck);
+console.log(bessie, dolly, babe, little);
+console.log(blackAndWhite, black, pink); 
+
+
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+const [r, o, y, g, b, , v] = colors;
+const [ , , , , , indg] = colors; 
+console.log(red, orange, yellow, green, blue, indigo, violet);
+console.log(r, o, y, g, b, v);
+console.log(indg);
+
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -9,6 +24,8 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+const {muppetName, color, song, job, partner} = muppet
+console.log(muppet);
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +41,9 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+const {song2, song4} = nestedMuppet.album.theMuppetMovie;
+const {nestedJob, nestedPartner} = nestedMuppet;
+console.log(nestedMuppet.album.theMuppetMovie, nestedMuppet)
 
 // Strings
 
